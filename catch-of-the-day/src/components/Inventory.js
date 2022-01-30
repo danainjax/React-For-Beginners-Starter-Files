@@ -1,11 +1,12 @@
 import AddFishForm from './AddFishForm'
 
-const Inventory = () => {
+const Inventory = ({ addFish, loadSampleFishes }) => {
   return (
     <>
       <div className='inventory'>
         <h2>Inventory</h2>
-        <AddFishForm />
+        <AddFishForm addFish={addFish} />
+        <button onClick={loadSampleFishes}>Load Sample Fishes</button>
       </div>
     </>
   )
