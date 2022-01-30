@@ -1,7 +1,12 @@
+import AddFishForm from './AddFishForm'
+
 const Inventory = () => {
   return (
     <>
-      <div className='inventory'>Inventory</div>
+      <div className='inventory'>
+        <h2>Inventory</h2>
+        <AddFishForm />
+      </div>
     </>
   )
 }
